@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Tiago Cursor Estudos</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+  <!--button whatsapp//-->
+  <a style="background-image: url(https://i.ibb.co/RvTJC4r/whatsapp.png); border-radius: 34px;width: 60px; font-size: 0; height: 60px;position: fixed;right: 10px;z-index: 999;display: block;bottom: 10px;background-size: 73%;background-repeat: no-repeat;background-color: #1bd741;background-position: center;" target="_blank" href="https://wa.me/555579998279820?text=Oi%20Tiago%2C%20vim%20pelo%20seu%20site!">link whatsapp</a>
+
+  
+  
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <div id="hero">
+    <h1>TIAGO<br/>MAIA</h1>
+    <a target="_blank" href="https://github.com/tiagomaia91">github/tiagomaia91</a>
+  </div>
+</div>
+
+
+  <!-- Outra opção de Butão
+
+<a href="https://webdesign.tiagomaia.dev.br" class="my-btn">Portfolio</a>
+  <meta charset="UTF-8">
+  <title>botão portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css">
+  <style>
+    .my-btn {      
+      background-color: #28a745;
+      border-color: #28a745;
+      color: #fff;
+      font-weight: bold;
+      position: relative;  
+      top: -155px;
+      left: 610px;    
+      padding: 20px 35px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.2s ease-out;
+    }
+    .my-btn:hover {
+      background-color: #368ae9;
+      border-color: #368ae9;
+      
+    }
+  </style>
+-->
+
+<!-- partial -->
+  <script type="module" src="./script.js"></script>
+
+  <div style="display: flex; justify-content: center; align-items: center;">
+  <a href="https://webdesign.tiagomaia.dev.br">
+    <button>Portifolio</button>
+    
+  </a>
+  
+  <style>
+  button {
+    --border-radius: 15px;
+    --border-width: 4px;
+    appearance: none;
+    position: fixed;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    padding: 1em 2em;
+    border: 0;
+    border-radius: 13px;
+    background-color: #212121;
+    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 2;
+    cursor: pointer;
+
+  </div>
+   }
+   
+   button::after {
+    --m-i: linear-gradient(rgb(0, 0, 0), #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(
+       #488cfb,
+       #29dbbc,
+       #ddf505,
+       #ff9f0e,
+       #e440bb,
+       #655adc,
+       #488cfb
+     );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+   }
+   
+   button:hover::after {
+    animation-play-state: running;
+   }
+   
+   @keyframes rotate-hue {
+    to {
+     filter: hue-rotate(1turn);
+    }
+   }
+   
+   button,
+   button::after {
+    box-sizing: border-box;
+   }
+   
+   button:active {
+    --border-width: 5px;
+   }
+   </style>
+
+</body>
+</html>
